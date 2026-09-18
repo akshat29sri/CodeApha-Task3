@@ -81,6 +81,7 @@ html {
 }
 
 body {
+  min-width: 320px;
   background-color: var(--bg);
   background-image: radial-gradient(var(--dot-grid) 1.4px, transparent 1.4px);
   background-size: 28px 28px;
@@ -1377,6 +1378,7 @@ p {
 @media (max-width: 720px) {
   .nav {
     min-height: 64px;
+    width: min(100%, calc(100% - 20px));
   }
 
   .nav-toggle {
@@ -1539,6 +1541,12 @@ p {
   .contact-link {
     gap: 12px;
     padding: 14px 16px;
+    flex-wrap: wrap;
+  }
+
+  .link-badge {
+    margin-left: 0;
+    width: fit-content;
   }
 
   .project-content {
@@ -1556,6 +1564,31 @@ p {
 
   .skill-card {
     padding: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section,
+  .nav,
+  .footer {
+    width: min(100%, calc(100% - 18px));
+  }
+
+  .hero-actions .btn,
+  .btn-demo,
+  .btn-github {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-link {
+    display: grid;
+    grid-template-columns: 38px 1fr auto;
+    align-items: center;
+  }
+
+  .contact-link strong {
+    overflow-wrap: anywhere;
   }
 }
 
