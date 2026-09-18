@@ -4,30 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akshat Srivastava | Portfolio</title>
-  <meta name="description" content="Personal portfolio for Akshat Srivastava showcasing GitHub projects, Dribbble work, skills, resume highlights, and contact links.">
-  <link rel="preconnect" href="https://github.com">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=2.0">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="#home" aria-label="Akshat Srivastava home">
         <span class="brand-mark">AS</span>
-        <span>Akshat</span>
+        <span class="brand-text">Akshat<span class="dot-accent">.</span></span>
       </a>
 
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-controls">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle theme">
+          <span class="icon-sun" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="icon-moon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
       <div class="nav-links" data-nav-links>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#resume">Experience</a>
         <a href="#design">Design</a>
-        <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -35,45 +59,90 @@
 
   <main>
     <section class="hero section" id="home">
+      <!-- Background decorative doodles -->
+      <div class="doodle-sparkle doodle-1" aria-hidden="true">✦</div>
+      <div class="doodle-sparkle doodle-2" aria-hidden="true">★</div>
+      <div class="doodle-bracket doodle-3" aria-hidden="true">&lt;/&gt;</div>
+
       <div class="hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Developer Portfolio / GDG Energy</p>
-          <h1>Building playful, useful web experiences from code to interface.</h1>
-          <p class="hero-text">
-            I am Akshat, a frontend developer and visual design explorer turning GitHub builds and Dribbble ideas into responsive, polished digital work.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">View Work</a>
-            <a class="btn ghost" href="#design">Design Shots</a>
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Available for projects & internships</span>
+            <span class="pill-divider">•</span>
+            <span class="gdg-badge">GDG Energy</span>
           </div>
+
+          <h1>
+            Building playful, high-impact web apps from
+            <span class="doodle-underline-wrapper">
+              <span>code to interface</span>
+              <svg class="doodle-underline-svg" viewBox="0 0 260 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 10.5C50 3.5 160 2 257 9" stroke="var(--google-blue)" stroke-width="4" stroke-linecap="round"/>
+                <path d="M12 11.5C70 6.5 190 6 245 10" stroke="var(--google-yellow)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>.
+          </h1>
+
+          <p class="hero-text">
+            Hey there! I'm <strong>Akshat Srivastava</strong> — a frontend developer & creative coder turning JavaScript, TypeScript, React, and Dribbble UI ideas into responsive, polished digital products.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">
+              <span>Explore Projects (20)</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M12 4v14"/></svg>
+            </a>
+            <a class="btn ghost" href="#design">
+              <span>Design Shots</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+            <a class="btn subtle-link" href="https://github.com/akshat29sri" target="_blank" rel="noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+
           <div class="hero-tags" aria-label="Portfolio focus areas">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>UI Design</span>
+            <span class="tag-blue">Frontend Dev</span>
+            <span class="tag-yellow">React & TypeScript</span>
+            <span class="tag-green">UI/UX Exploration</span>
+            <span class="tag-red">Creative Code</span>
           </div>
         </div>
 
         <div class="hero-visual reveal" aria-label="Portfolio preview">
           <div class="profile-card">
             <div class="profile-topbar">
-              <span></span>
-              <span></span>
-              <span></span>
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+              <span class="window-title">akshat.config.ts</span>
             </div>
             <div class="profile-main">
-              <img src="https://github.com/akshat29sri.png" alt="Akshat Srivastava GitHub avatar" class="avatar">
-              <div>
-                <p class="profile-name">Akshat</p>
-                <p class="profile-role">Frontend Developer</p>
+              <div class="avatar-wrapper">
+                <img src="https://github.com/akshat29sri.png" alt="Akshat Srivastava GitHub avatar" class="avatar">
+                <span class="avatar-status-dot" title="Online & Coding"></span>
+              </div>
+              <div class="profile-details">
+                <div class="profile-name-row">
+                  <p class="profile-name">Akshat Srivastava</p>
+                  <span class="verified-badge">✓</span>
+                </div>
+                <p class="profile-role">Frontend Engineer & UI Explorer</p>
+                <div class="profile-micro-tags">
+                  <span>@akshat29sri</span>
+                  <span>GDG Enthusiast</span>
+                </div>
               </div>
             </div>
             <div class="code-window" aria-hidden="true">
-              <p><span>const</span> portfolio = {</p>
-              <p>&nbsp;&nbsp;github: "8 public repos",</p>
-              <p>&nbsp;&nbsp;design: "Dribbble UI shots",</p>
-              <p>&nbsp;&nbsp;style: "arcade + developer"</p>
-              <p>}</p>
+              <div class="code-line"><span class="c-keyword">const</span> <span class="c-var">developer</span> = {</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="c-prop">repositories</span>: <span class="c-num">20</span>,</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="c-prop">hostedApps</span>: [<span class="c-str">"VARUNA"</span>, <span class="c-str">"EduQuiz"</span>],</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="c-prop">stack</span>: [<span class="c-str">"React"</span>, <span class="c-str">"TS"</span>, <span class="c-str">"Tailwind"</span>, <span class="c-str">"Java"</span>],</div>
+              <div class="code-line">&nbsp;&nbsp;<span class="c-prop">focus</span>: <span class="c-str">"Fast, playful & accessible UX"</span></div>
+              <div class="code-line">};</div>
             </div>
           </div>
         </div>
@@ -82,25 +151,44 @@
 
     <section class="section about" id="about">
       <div class="section-heading reveal">
-        <p class="eyebrow">About</p>
-        <h2>Design-minded development for useful websites.</h2>
+        <p class="eyebrow">About Me</p>
+        <h2>Engineering digital experiences with design curiosity.</h2>
       </div>
       <div class="about-grid">
-        <p class="lead reveal">
-          I enjoy turning ideas into fast, readable, and responsive interfaces. My work focuses on HTML, CSS, JavaScript, interaction details, and layouts that feel easy to use on every screen.
-        </p>
+        <div class="about-narrative reveal">
+          <p class="lead">
+            I build fast, responsive, and intuitive web applications. My work spans frontend interfaces in <strong>React & TypeScript</strong>, interactive JavaScript web tools, and full-stack utilities deployed to production.
+          </p>
+          <p>
+            With active participation in developer hackathons like the <em>IEEE Vibe-a-Thon</em> and multiple software engineering internships (CodeAlpha, CodSoft, OASIS Infobyte), I bring practical project experience, clean component architecture, and a strong eye for visual detail.
+          </p>
+          <div class="about-badges">
+            <span>⚡ Creative Frontend</span>
+            <span>🚀 Vercel Deployments</span>
+            <span>🎨 Dribbble UI/UX</span>
+            <span>☕ Java & Algorithms</span>
+          </div>
+        </div>
         <div class="stats reveal">
-          <div>
-          <strong>08</strong>
-          <span>GitHub projects</span>
+          <div class="stat-card">
+            <strong>20</strong>
+            <span>GitHub Repos</span>
+            <small>Public Codebases</small>
           </div>
-          <div>
+          <div class="stat-card">
+            <strong>02</strong>
+            <span>Hosted Apps</span>
+            <small>Live on Vercel</small>
+          </div>
+          <div class="stat-card">
             <strong>100%</strong>
-            <span>Responsive layout</span>
+            <span>Responsive</span>
+            <small>Mobile & Desktop</small>
           </div>
-          <div>
-          <strong>UI</strong>
-          <span>Dribbble work</span>
+          <div class="stat-card">
+            <strong>UI/UX</strong>
+            <span>Dribbble Work</span>
+            <small>Product Concepts</small>
           </div>
         </div>
       </div>
@@ -108,142 +196,479 @@
 
     <section class="section skills" id="skills">
       <div class="section-heading reveal">
-        <p class="eyebrow">Skills</p>
-        <h2>Tools I use to shape front-end experiences.</h2>
+        <p class="eyebrow">Skills & Tech Stack</p>
+        <h2>Modern toolkit I use to build scalable products.</h2>
       </div>
       <div class="skill-grid">
         <article class="skill-card reveal">
-          <span class="skill-icon">HTML</span>
-          <h3>Semantic Structure</h3>
-          <p>Accessible sections, clear content hierarchy, and SEO-friendly markup.</p>
+          <div class="skill-header">
+            <span class="skill-icon icon-blue">🌐</span>
+            <h3>Frontend & Web</h3>
+          </div>
+          <p>Modern component architecture, semantic structure, and responsive styling.</p>
+          <div class="skill-pills">
+            <span>React.js</span>
+            <span>TypeScript</span>
+            <span>JavaScript (ES6+)</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Tailwind CSS</span>
+            <span>Next.js</span>
+          </div>
         </article>
+
         <article class="skill-card reveal">
-          <span class="skill-icon">CSS</span>
-          <h3>Responsive Styling</h3>
-          <p>Modern layouts, subtle motion, hover states, and mobile-first polish.</p>
+          <div class="skill-header">
+            <span class="skill-icon icon-yellow">☕</span>
+            <h3>Programming & Logic</h3>
+          </div>
+          <p>Object-oriented systems, data scraping pipelines, and core programming.</p>
+          <div class="skill-pills">
+            <span>Java</span>
+            <span>Python</span>
+            <span>Node.js</span>
+            <span>REST APIs</span>
+            <span>OOP Design</span>
+            <span>Data Structures</span>
+          </div>
         </article>
+
         <article class="skill-card reveal">
-          <span class="skill-icon">JS</span>
-          <h3>Interactivity</h3>
-          <p>Smooth scroll behavior, dynamic navigation, reveals, filters, and useful UI feedback.</p>
-        </article>
-        <article class="skill-card reveal">
-          <span class="skill-icon">UI</span>
-          <h3>Product Thinking</h3>
-          <p>Clean flows, readable spacing, attractive visuals, and purposeful details.</p>
+          <div class="skill-header">
+            <span class="skill-icon icon-green">🎨</span>
+            <h3>Design & Workflow</h3>
+          </div>
+          <p>Product thinking, interface prototypes, and developer tooling.</p>
+          <div class="skill-pills">
+            <span>Figma UI/UX</span>
+            <span>Git & GitHub</span>
+            <span>Vercel</span>
+            <span>Responsive Layouts</span>
+            <span>Web APIs</span>
+            <span>Accessibility</span>
+          </div>
         </article>
       </div>
     </section>
 
     <section class="section projects" id="projects">
       <div class="section-heading reveal">
-        <p class="eyebrow">GitHub Projects</p>
-        <h2>All public builds from my GitHub workspace.</h2>
+        <p class="eyebrow">GitHub & Hosted Projects</p>
+        <h2>All 20 public repositories and hosted applications from my GitHub.</h2>
       </div>
 
       <div class="project-filters reveal" aria-label="Project filters">
-        <button class="filter-btn active" type="button" data-filter="all">All</button>
-        <button class="filter-btn" type="button" data-filter="codealpha">CodeAlpha</button>
-        <button class="filter-btn" type="button" data-filter="web">Web</button>
-        <button class="filter-btn" type="button" data-filter="js">JavaScript</button>
+        <button class="filter-btn active" type="button" data-filter="all">All (20)</button>
+        <button class="filter-btn" type="button" data-filter="hosted">⚡ Hosted / Live</button>
+        <button class="filter-btn" type="button" data-filter="react">React / TS</button>
+        <button class="filter-btn" type="button" data-filter="web">Web & JS</button>
+        <button class="filter-btn" type="button" data-filter="java">Java / OOP</button>
         <button class="filter-btn" type="button" data-filter="app">Apps</button>
+        <button class="filter-btn" type="button" data-filter="codealpha">CodeAlpha</button>
+        <button class="filter-btn" type="button" data-filter="codsoft">CodSoft</button>
+        <button class="filter-btn" type="button" data-filter="oasis">OASIS</button>
         <button class="filter-btn" type="button" data-filter="security">Security</button>
       </div>
 
       <div class="project-grid">
-        <article class="project-card reveal" data-category="web js codealpha">
-          <div class="project-image project-one">
-            <span>Task 1</span>
+        <!-- 1. VARUNA -->
+        <article class="project-card reveal" data-category="hosted react app web">
+          <div class="project-image project-varuna">
+            <span class="badge-live">● Live Demo</span>
           </div>
           <div class="project-content">
-            <p class="project-type">CodeAlpha / Web</p>
-            <h3>CodeAlpha Task 1</h3>
-            <p>A polished assignment build focused on structure, styling, and user interaction.</p>
-            <a href="https://github.com/akshat29sri/CodeAlpha-Task1" target="_blank" rel="noreferrer">View on GitHub</a>
+            <div class="card-tags">
+              <span>TypeScript</span>
+              <span>Next.js</span>
+              <span>Vercel</span>
+            </div>
+            <p class="project-type">Hosted Web App</p>
+            <h3>VARUNA</h3>
+            <p>Full-stack web application built in TypeScript, deployed live with responsive UI and modern styling.</p>
+            <div class="project-links">
+              <a href="https://varuna-xi.vercel.app" class="btn-demo" target="_blank" rel="noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/akshat29sri/VARUNA" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal" data-category="web js codealpha">
-          <div class="project-image project-two">
-            <span>Task 2</span>
+        <!-- 2. EduQuiz -->
+        <article class="project-card reveal" data-category="hosted web app js">
+          <div class="project-image project-eduquiz">
+            <span class="badge-live">● Live Demo</span>
           </div>
           <div class="project-content">
-            <p class="project-type">CodeAlpha / JavaScript</p>
-            <h3>CodeAlpha Task 2</h3>
-            <p>A compact web project using separate HTML, CSS, and JS files for clear organization.</p>
-            <a href="https://github.com/akshat29sri/CodeApha-Task2" target="_blank" rel="noreferrer">View on GitHub</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-category="web js codealpha">
-          <div class="project-image project-three">
-            <span>Task 3</span>
-          </div>
-          <div class="project-content">
-            <p class="project-type">CodeAlpha / Portfolio</p>
-            <h3>CodeAlpha Task 3 Portfolio</h3>
-            <p>This responsive portfolio with scroll animations, project filters, and contact links.</p>
-            <a href="https://github.com/akshat29sri/CodeApha-Task3" target="_blank" rel="noreferrer">View on GitHub</a>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-category="web app js">
-          <div class="project-image project-four">
-            <span>EduQuiz</span>
-          </div>
-          <div class="project-content">
-            <p class="project-type">Learning App</p>
+            <div class="card-tags">
+              <span>JavaScript</span>
+              <span>IEEE Vibe-a-Thon</span>
+              <span>Vercel</span>
+            </div>
+            <p class="project-type">Learning Platform</p>
             <h3>eduquiz</h3>
-            <p>An education-focused quiz project built as a practical app experience.</p>
-            <a href="https://github.com/akshat29sri/eduquiz" target="_blank" rel="noreferrer">View on GitHub</a>
+            <p>Interactive quiz and learning platform created for the IEEE Vibe-a-Thon hackathon.</p>
+            <div class="project-links">
+              <a href="https://eduquiz-wheat.vercel.app" class="btn-demo" target="_blank" rel="noreferrer">Live Demo ↗</a>
+              <a href="https://github.com/akshat29sri/eduquiz" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo</a>
+            </div>
           </div>
         </article>
 
-        <article class="project-card reveal" data-category="web app">
-          <div class="project-image project-five">
-            <span>Fest</span>
+        <!-- 3. QKILL-SLAB2 -->
+        <article class="project-card reveal" data-category="react web app js">
+          <div class="project-image project-qkill">
+            <span>React & Tailwind</span>
           </div>
           <div class="project-content">
-            <p class="project-type">Event Website</p>
-            <h3>techfest</h3>
-            <p>A tech event style project with a public-facing web experience.</p>
-            <a href="https://github.com/akshat29sri/techfest" target="_blank" rel="noreferrer">View on GitHub</a>
+            <div class="card-tags">
+              <span>React</span>
+              <span>Tailwind CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <p class="project-type">Web Application</p>
+            <h3>QKILL-SLAB2</h3>
+            <p>Coding Ninjas style clone interface engineered with React components and Tailwind utility styling.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/QKILL-SLAB2" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
           </div>
         </article>
 
+        <!-- 4. FoodLogger -->
+        <article class="project-card reveal" data-category="web app js">
+          <div class="project-image project-food">
+            <span>Diet Tracker</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+            </div>
+            <p class="project-type">Health & Nutrition</p>
+            <h3>foodlogger</h3>
+            <p>A web application for logging daily food intake, meal routines, and calorie tracking.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/foodlogger" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. News-scrapper -->
+        <article class="project-card reveal" data-category="web js app">
+          <div class="project-image project-news">
+            <span>Aggregator</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Scraping</span>
+            </div>
+            <p class="project-type">Data Pipeline</p>
+            <h3>News-scrapper-</h3>
+            <p>Automated news scraper extracting and consolidating headline feeds from multiple sources.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/News-scrapper-" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. TO-DO-APP -->
         <article class="project-card reveal" data-category="web app js">
           <div class="project-image project-six">
-            <span>Tasks</span>
+            <span>Productivity</span>
           </div>
           <div class="project-content">
+            <div class="card-tags">
+              <span>JavaScript</span>
+              <span>DOM</span>
+              <span>LocalStorage</span>
+            </div>
             <p class="project-type">Productivity App</p>
             <h3>TO-DO-APP</h3>
-            <p>A task management build focused on everyday organization and simple interaction.</p>
-            <a href="https://github.com/akshat29sri/TO-DO-APP" target="_blank" rel="noreferrer">View on GitHub</a>
+            <p>Clean and intuitive task organizer with local state management, status toggles, and filters.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/TO-DO-APP" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
           </div>
         </article>
 
+        <!-- 7. Fraud_Honeypott -->
         <article class="project-card reveal" data-category="security app">
           <div class="project-image project-seven">
             <span>Security</span>
           </div>
           <div class="project-content">
-            <p class="project-type">Security Concept</p>
+            <div class="card-tags">
+              <span>Python</span>
+              <span>Cybersecurity</span>
+              <span>Detection</span>
+            </div>
+            <p class="project-type">Security Research</p>
             <h3>Fraud_Honeypott</h3>
-            <p>A security-themed project exploring fraud detection or honeypot-style behavior.</p>
-            <a href="https://github.com/akshat29sri/Fraud_Honeypott" target="_blank" rel="noreferrer">View on GitHub</a>
+            <p>Cybersecurity honeypot project simulating traps to capture and analyze suspicious fraud behavior.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/Fraud_Honeypott" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
           </div>
         </article>
 
+        <!-- 8. TechFest -->
         <article class="project-card reveal" data-category="web app">
-          <div class="project-image project-eight">
-            <span>Build</span>
+          <div class="project-image project-five">
+            <span>Event Hub</span>
           </div>
           <div class="project-content">
-            <p class="project-type">GitHub Project</p>
-            <h3>QKILL-SLAB2</h3>
-            <p>A public repository from my project archive, included as part of my complete GitHub work.</p>
-            <a href="https://github.com/akshat29sri/QKILL-SLAB2" target="_blank" rel="noreferrer">View on GitHub</a>
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>UI/UX</span>
+            </div>
+            <p class="project-type">Event Website</p>
+            <h3>techfest</h3>
+            <p>Interactive event website presenting festival tracks, registration, and schedules.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/techfest" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. CodeAlpha Task 3 Portfolio -->
+        <article class="project-card reveal" data-category="hosted web js codealpha">
+          <div class="project-image project-three">
+            <span>Portfolio</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Vanilla JS</span>
+            </div>
+            <p class="project-type">CodeAlpha / Portfolio</p>
+            <h3>CodeApha-Task3</h3>
+            <p>This personal portfolio site featuring neo-brutalist styling, scroll reveal, and project filtering.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/CodeApha-Task3" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. CodeAlpha Task 2 -->
+        <article class="project-card reveal" data-category="web js codealpha">
+          <div class="project-image project-two">
+            <span>CodeAlpha</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>JavaScript</span>
+              <span>CSS3</span>
+              <span>HTML5</span>
+            </div>
+            <p class="project-type">CodeAlpha Task 2</p>
+            <h3>CodeApha-Task2</h3>
+            <p>Frontend assignment project structured with modular HTML, CSS, and JavaScript files.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/CodeApha-Task2" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. CodeAlpha Task 1 -->
+        <article class="project-card reveal" data-category="web js codealpha">
+          <div class="project-image project-one">
+            <span>CodeAlpha</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>JavaScript</span>
+              <span>Responsive</span>
+              <span>UI</span>
+            </div>
+            <p class="project-type">CodeAlpha Task 1</p>
+            <h3>CodeAlpha-Task1</h3>
+            <p>Structured frontend assignment exploring layout design, user interaction, and styling.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/CodeAlpha-Task1" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. CODSOFT-T1 -->
+        <article class="project-card reveal" data-category="codsoft web">
+          <div class="project-image project-codsoft">
+            <span>CodSoft T1</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Web</span>
+            </div>
+            <p class="project-type">CodSoft Internship</p>
+            <h3>CODSOFT-T1</h3>
+            <p>Frontend web development task focusing on responsive design, styling, and modern UI.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/CODSOFT-T1" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 13. CODSOFT-T2 -->
+        <article class="project-card reveal" data-category="codsoft web js">
+          <div class="project-image project-codsoft">
+            <span>CodSoft T2</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>JavaScript</span>
+              <span>DOM</span>
+              <span>CSS3</span>
+            </div>
+            <p class="project-type">CodSoft Internship</p>
+            <h3>CODSOFT-T2</h3>
+            <p>Interactive web application building dynamic DOM manipulation and functional user flows.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/CODSOFT-T2" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 14. CODSOFT-T3 -->
+        <article class="project-card reveal" data-category="codsoft app java">
+          <div class="project-image project-codsoft">
+            <span>CodSoft T3</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>Logic</span>
+            </div>
+            <p class="project-type">CodSoft Internship</p>
+            <h3>CODSOFT-T3</h3>
+            <p>Java development task implementing core logic, object-oriented concepts, and clean structure.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/CODSOFT-T3" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 15. OASIS-TASK-1 -->
+        <article class="project-card reveal" data-category="oasis app java">
+          <div class="project-image project-oasis">
+            <span>OASIS T1</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>Java</span>
+              <span>Console App</span>
+              <span>OOP</span>
+            </div>
+            <p class="project-type">OASIS Infobyte</p>
+            <h3>OASIS-TASK-1</h3>
+            <p>Software development task implementing algorithmic solutions and structured Java workflows.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/OASIS-TASK-1" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 16. OASIS-TASK-2 -->
+        <article class="project-card reveal" data-category="oasis app java">
+          <div class="project-image project-oasis">
+            <span>OASIS T2</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>Java</span>
+              <span>Application</span>
+              <span>Algorithms</span>
+            </div>
+            <p class="project-type">OASIS Infobyte</p>
+            <h3>OASIS-TASK-2</h3>
+            <p>Java-based software task designed for problem-solving, state management, and user interaction.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/OASIS-TASK-2" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 17. OASIS-TASK-3 -->
+        <article class="project-card reveal" data-category="oasis app java">
+          <div class="project-image project-oasis">
+            <span>OASIS T3</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>Java</span>
+              <span>System Logic</span>
+              <span>OOP</span>
+            </div>
+            <p class="project-type">OASIS Infobyte</p>
+            <h3>OASIS-TASK-3</h3>
+            <p>Comprehensive Java application demonstrating object-oriented architecture and business logic.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/OASIS-TASK-3" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 18. NTCC-project1 -->
+        <article class="project-card reveal" data-category="app web">
+          <div class="project-image project-eight">
+            <span>Academic Build</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>Software Engineering</span>
+              <span>Project</span>
+            </div>
+            <p class="project-type">Course Project</p>
+            <h3>NTCC-project1</h3>
+            <p>Non-Teaching Credit Course (NTCC) engineering project exploring system design and implementation.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/NTCC-project1" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 19. My-Portfolio- -->
+        <article class="project-card reveal" data-category="web">
+          <div class="project-image project-one">
+            <span>Portfolio</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>CSS3</span>
+              <span>HTML5</span>
+              <span>Design</span>
+            </div>
+            <p class="project-type">Web Portfolio</p>
+            <h3>My-Portfolio-</h3>
+            <p>Portfolio layout exploration focused on clean sectioning, responsive typography, and themes.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/My-Portfolio-" class="btn-github" target="_blank" rel="noreferrer">GitHub Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 20. akshat29sri Config -->
+        <article class="project-card reveal" data-category="web">
+          <div class="project-image project-three">
+            <span>GitHub Profile</span>
+          </div>
+          <div class="project-content">
+            <div class="card-tags">
+              <span>Markdown</span>
+              <span>GitHub README</span>
+              <span>Profile</span>
+            </div>
+            <p class="project-type">GitHub Profile</p>
+            <h3>akshat29sri</h3>
+            <p>Personal GitHub profile repository powering the developer bio, stats, and pinned work.</p>
+            <div class="project-links">
+              <a href="https://github.com/akshat29sri/akshat29sri" class="btn-github" target="_blank" rel="noreferrer">GitHub Profile ↗</a>
+            </div>
           </div>
         </article>
       </div>
@@ -278,29 +703,69 @@
 
     <section class="section resume" id="resume">
       <div class="section-heading reveal">
-        <p class="eyebrow">Resume</p>
-        <h2>A quick snapshot of what I bring.</h2>
+        <p class="eyebrow">Experience & Hackathons</p>
+        <h2>Practical engineering and hands-on builds.</h2>
       </div>
       <div class="timeline reveal">
         <div class="timeline-item">
-          <span>01</span>
-          <div>
-            <h3>Frontend Foundation</h3>
-            <p>HTML, CSS, JavaScript, responsive design, page structure, and browser-based interaction.</p>
+          <span class="timeline-num">01</span>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>CodeAlpha — Frontend Development Intern</h3>
+              <span class="timeline-tag">Internship</span>
+            </div>
+            <p>Engineered responsive web applications and dynamic user interfaces (Task 1, 2, and 3 Portfolio). Focused on semantic markup, modern CSS architecture, responsive layouts, and DOM interaction.</p>
+            <div class="timeline-pills">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
+            </div>
           </div>
         </div>
         <div class="timeline-item">
-          <span>02</span>
-          <div>
-            <h3>Project Building</h3>
-            <p>Hands-on CodeAlpha tasks with practical file organization and user-facing interfaces.</p>
+          <span class="timeline-num">02</span>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>CodSoft — Software & Web Development Intern</h3>
+              <span class="timeline-tag">Internship</span>
+            </div>
+            <p>Completed 3 development milestones spanning modern frontend interfaces, dynamic JavaScript utilities, and core Java programming logic.</p>
+            <div class="timeline-pills">
+              <span>Java</span>
+              <span>JavaScript</span>
+              <span>Web Development</span>
+            </div>
           </div>
         </div>
         <div class="timeline-item">
-          <span>03</span>
-          <div>
-            <h3>Design Awareness</h3>
-            <p>Clean visual hierarchy, animation restraint, usable layouts, and thoughtful hover effects.</p>
+          <span class="timeline-num">03</span>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>OASIS Infobyte — Java Software Development</h3>
+              <span class="timeline-tag">Internship</span>
+            </div>
+            <p>Built modular Java software applications implementing object-oriented programming principles, algorithms, and console/system workflows.</p>
+            <div class="timeline-pills">
+              <span>Java</span>
+              <span>OOP</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-num">04</span>
+          <div class="timeline-body">
+            <div class="timeline-header">
+              <h3>IEEE Vibe-a-Thon — EduQuiz Project</h3>
+              <span class="timeline-tag">Hackathon</span>
+            </div>
+            <p>Developed and deployed EduQuiz, an interactive quiz platform live on Vercel designed for dynamic learning and user engagement.</p>
+            <div class="timeline-pills">
+              <span>Web App</span>
+              <span>Vercel Deploy</span>
+              <span>Hackathon</span>
+            </div>
           </div>
         </div>
       </div>
@@ -308,23 +773,45 @@
 
     <section class="section contact" id="contact">
       <div class="contact-panel reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Have an idea or opportunity? Let us make it real.</h2>
-          <p>Reach me through GitHub or Dribbble, or use the quick contact card below.</p>
+        <div class="contact-intro">
+          <p class="eyebrow">Get In Touch</p>
+          <h2>Have an idea, project, or opportunity? Let's talk!</h2>
+          <p>Whether you want to collaborate on a web application, explore UI concepts, or discuss developer opportunities — my inbox is open.</p>
+          <div class="contact-status-badge">
+            <span class="status-dot"></span>
+            <span>Always open to exciting opportunities</span>
+          </div>
         </div>
         <div class="contact-links">
-          <a class="contact-link" href="https://github.com/akshat29sri" target="_blank" rel="noreferrer">
-            <span>GitHub</span>
-            <strong>github.com/akshat29sri</strong>
+          <a class="contact-link link-github" href="https://github.com/akshat29sri" target="_blank" rel="noreferrer">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div>
+              <span>GitHub</span>
+              <strong>github.com/akshat29sri</strong>
+            </div>
+            <span class="link-arrow">↗</span>
           </a>
-          <a class="contact-link" href="https://dribbble.com/akshat_sri" target="_blank" rel="noreferrer">
-            <span>Dribbble</span>
-            <strong>dribbble.com/akshat_sri</strong>
+          <a class="contact-link link-dribbble" href="https://dribbble.com/akshat_sri" target="_blank" rel="noreferrer">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm8.01 4.77a10.05 10.05 0 0 1 2.05 6.32c-.37-.08-2.61-.55-5.26-.25-.06-.15-.12-.31-.18-.46a25.32 25.32 0 0 0-1.26-2.84 10.15 10.15 0 0 1 4.65-2.77zm-6.66-2.61c2.19 0 4.2.78 5.77 2.08a12.08 12.08 0 0 0-4.39 2.59 23.3 23.3 0 0 0-3.32-4.35c.62-.2 1.28-.32 1.94-.32zm-4.39 1.15a21.46 21.46 0 0 1 3.21 4.19c-4.22 1.17-8.17 1.19-8.56 1.19a10.08 10.08 0 0 1 5.35-5.38zm-5.02 7.7c.36 0 3.75-.02 7.6-1.12.33.66.63 1.34.89 2.04-5.06 1.55-7.07 5.16-7.23 5.46a10.08 10.08 0 0 1-1.26-6.38zm3.08 8.02c.2-.34 2.1-3.6 6.84-5.18a22.25 22.25 0 0 1 1.76 5.86 10.07 10.07 0 0 1-8.6-0.68zm10.45-.63a20.48 20.48 0 0 0-1.74-5.46c2.46-.35 4.6.3 4.88.39a10.09 10.09 0 0 1-3.14 5.07z"/></svg>
+            </div>
+            <div>
+              <span>Dribbble</span>
+              <strong>dribbble.com/akshat_sri</strong>
+            </div>
+            <span class="link-arrow">↗</span>
           </a>
           <button class="contact-link copy-btn" type="button" data-copy="akshat29sri">
-            <span>Handle</span>
-            <strong>@akshat29sri</strong>
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </div>
+            <div>
+              <span>Copy Username</span>
+              <strong>@akshat29sri</strong>
+            </div>
+            <span class="link-badge">Click to copy</span>
           </button>
         </div>
       </div>
