@@ -140,18 +140,20 @@ button {
   letter-spacing: -0.02em;
 }
 
-.brand-mark {
+.brand-logo {
   width: 36px;
   height: 36px;
+  flex-shrink: 0;
   display: grid;
   place-items: center;
-  border-radius: 9px;
-  border: 1.5px solid var(--ink);
-  background: linear-gradient(135deg, var(--google-blue) 0 25%, var(--google-red) 25% 50%, var(--google-yellow) 50% 75%, var(--google-green) 75%);
-  color: #fff;
-  font-size: 0.85rem;
-  font-weight: 900;
-  box-shadow: 2px 2px 0 var(--ink);
+  filter: drop-shadow(1px 1px 0 var(--ink));
+}
+
+.brand-badge {
+  font-size: 0.7em;
+  font-weight: 700;
+  color: var(--google-green);
+  margin-left: 1px;
 }
 
 .brand-text {
